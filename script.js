@@ -135,7 +135,7 @@ const movies = [  { title: "John Wick: Chapter 1", year: 2014, genre: "Action, T
         { title: "Die Another Day (007)", year: 2002, genre: "Action, Adventure", watched: false },
         { title: "Casino Royale (1967) (007)", year: 1967, genre: "Comedy, Adventure", watched: false },
         { title: "Never Say Never Again (007)", year: 1983, genre: "Action, Adventure", watched: false },
-        { title: "Casino Royale (2006) (007)", year: 2006, genre: "Action, Adventure", watched: false },
+        { title: "Casino Royale (2006) (007)", year: 2006, genre: "Action, Adventure", watched: true },
         { title: "Quantum of Solace (007)", year: 2008, genre: "Action, Adventure", watched: true },
         { title: "Skyfall (007)", year: 2012, genre: "Action, Adventure", watched: true },
         { title: "Spectre (007)", year: 2015, genre: "Action, Adventure", watched: true },
