@@ -1,0 +1,104 @@
+<!-- Redesigned index.html with enhanced navigation and global styles -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie and TV Show List and Cartoon Movies Watchlist</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            list-style: none;
+            border-bottom: 2px solid #ccc;
+        }
+
+        nav a {
+            font-weight: bold;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+        }
+
+        section {
+            margin: 1em;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .welcome {
+            padding: 2rem;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Watchlist Of Siddhant Baliyan</h1>
+        <button onclick="toggleDarkMode()" style="position:absolute; top:10px; right:10px;">🌙 Toggle Dark Mode</button>
+    </header>
+    <nav>
+       
+        <ol style="list-style-type: none; font-size: 24px; line-height: 2;">
+            <li><a href="EnglishMovies.html">Movie</a></li>
+            <li><a href="MarvelMovies.html">Marvel Movie</a></li>
+            <li><a href="TVShowsNames.html">TV Shows</a></li>
+            <li><a href="HindiTvShows.html">Hindi TV Shows</a></li>
+            <li><a href="cartoon.html">Animation Films</a></li>
+            <li><a href="MarvelTvShows.html">Marvel TV Shows</a></li>
+        </ol>
+       
+    </nav>
+    <section id="content">
+        <div class="welcome">
+            <h2>Welcome to Your Personal Watchlist</h2>
+            <p style="font-size: 1.2rem;">Track all your favorite movies, TV shows, cartoons, and Marvel content easily.</p>
+        </div>
+    </section>
+    <footer>
+        <p>For any suggestions email me at my address sidaxe43@gmail.com</p>
+        <p>&copy; 2026 Movie and TV Show Watchlist</p>
+    </footer>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>

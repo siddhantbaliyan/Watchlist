@@ -1,116 +1,366 @@
-<!-- Redesigned index.html with enhanced navigation and global styles -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie and TV Show List and Cartoon Movies Watchlist</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Siddhant's Watchlist Hub</title>
     <style>
-        body {
-            background-color: #f5f5f5;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #8b5cf6;
+            --accent: #ec4899;
+            --bg-light: #f8fafc;
+            --bg-dark: #0f172a;
+            --text-light: #1e293b;
+            --text-dark: #f1f5f9;
+            --card-light: #ffffff;
+            --card-dark: #1e293b;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, var(--bg-light) 0%, #e0e7ff 100%);
+            color: var(--text-light);
+            min-height: 100vh;
+            transition: all 0.3s ease;
+        }
+
+        body.dark-mode {
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #1e1b4b 100%);
+            color: var(--text-dark);
         }
 
         header {
-            background-color: #333;
-            color: white;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            padding: 2rem;
             text-align: center;
-            padding: 1em;
             position: relative;
+            box-shadow: 0 10px 40px rgba(99, 102, 241, 0.2);
         }
 
-        nav ul {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            padding: 10px;
-            background: rgba(255, 255, 255, 0.8);
-            list-style: none;
-            border-bottom: 2px solid #ccc;
-        }
-
-        nav a {
-            font-weight: bold;
-            padding: 10px 15px;
-            text-decoration: none;
-            color: #333;
-            transition: background 0.3s, color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #4CAF50;
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
             color: white;
-            border-radius: 5px;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
 
-        section {
-            margin: 1em;
+        header p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+        }
+
+        .theme-toggle {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .welcome-section {
             text-align: center;
+            margin-bottom: 4rem;
+            animation: fadeIn 0.6s ease;
+        }
+
+        .welcome-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .stat-card {
+            background: var(--card-light);
+            padding: 1.5rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        body.dark-mode .stat-card {
+            background: var(--card-dark);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px var(--shadow);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-top: 0.5rem;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .category-card {
+            background: var(--card-light);
+            border-radius: 24px;
+            padding: 2rem;
+            box-shadow: 0 10px 40px var(--shadow);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        body.dark-mode .category-card {
+            background: var(--card-dark);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 60px var(--shadow);
+        }
+
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        body.dark-mode .category-title {
+            color: var(--secondary);
+        }
+
+        .category-count {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .category-link {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .category-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(99, 102, 241, 0.4);
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            background: var(--card-light);
+            color: var(--text-light);
             text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .welcome {
             padding: 2rem;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
         }
 
-        .dark-mode {
-            background-color: #1e1e1e;
-            color: #f5f5f5;
+        body.dark-mode footer {
+            background: var(--card-dark);
+            color: var(--text-dark);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .dark-mode table {
-            background-color: #2c2c2c;
-            color: #eee;
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
         }
 
-        .dark-mode th {
-            background-color: #444;
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .theme-toggle {
+                top: 1rem;
+                right: 1rem;
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Watchlist Of Siddhant Baliyan</h1>
-        <button onclick="toggleDarkMode()" style="position:absolute; top:10px; right:10px;">🌙 Toggle Dark Mode</button>
+        <button class="theme-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+        <h1>🎬 Siddhant's Watchlist Hub</h1>
+        <p>Your personal entertainment tracker</p>
     </header>
-    <nav>
-       
-        <ol style="list-style-type: none; font-size: 24px; line-height: 2;">
-            <li><a href="EnglishMovies.html">Movie</a></li>
-            <li><a href="MarvelMovies.html">Marvel Movie</a></li>
-            <li><a href="TVShowsNames.html">TV Shows</a></li>
-            <li><a href="HindiTvShows.html">Hindi TV Shows</a></li>
-            <li><a href="cartoon.html">Animation Films</a></li>
-            <li><a href="MarvelTvShows.html">Marvel TV Shows</a></li>
-        </ol>
-       
-    </nav>
-    <section id="content">
-        <div class="welcome">
-            <h2>Welcome to Your Personal Watchlist</h2>
-            <p style="font-size: 1.2rem;">Track all your favorite movies, TV shows, cartoons, and Marvel content easily.</p>
+
+    <div class="container">
+        <div class="welcome-section">
+            <h2>Track Your Entertainment Journey</h2>
+            <p>Organize all your favorite movies, TV shows, and cartoons in one beautiful place</p>
         </div>
-    </section>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">250+</div>
+                <div class="stat-label">Movies Tracked</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">TV Shows</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">31</div>
+                <div class="stat-label">Animated Films</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">65+</div>
+                <div class="stat-label">Marvel Content</div>
+            </div>
+        </div>
+
+        <div class="categories-grid">
+            <div class="category-card">
+                
+                <h3 class="category-title">English Movies</h3>
+                <p class="category-count">Action, Drama, Comedy & More</p>
+                <a href="EnglishMovies.html" class="category-link">Browse Movies</a>
+            </div>
+
+            <div class="category-card">
+               
+                <h3 class="category-title">Marvel Movies</h3>
+                <p class="category-count">MCU & Beyond</p>
+                <a href="MarvelMovies.html" class="category-link">Explore Marvel</a>
+            </div>
+
+            <div class="category-card">
+                
+                <h3 class="category-title">TV Shows</h3>
+                <p class="category-count">English Series</p>
+                <a href="TVShowsNames.html" class="category-link">Watch Shows</a>
+            </div>
+
+            <div class="category-card">
+                
+                <h3 class="category-title">Hindi TV Shows</h3>
+                <p class="category-count">Indian Web Series</p>
+                <a href="HindiTvShows.html" class="category-link">Browse Hindi</a>
+            </div>
+
+            <div class="category-card">
+               
+                <h3 class="category-title">Animation Films</h3>
+                <p class="category-count">Cartoons & Animated Movies</p>
+                <a href="cartoon.html" class="category-link">View Cartoons</a>
+            </div>
+
+            <div class="category-card">
+                
+                <h3 class="category-title">Marvel TV Shows</h3>
+                <p class="category-count">MCU Series Collection</p>
+                <a href="MarvelTvShows.html" class="category-link">Stream Marvel</a>
+            </div>
+        </div>
+    </div>
+
     <footer>
-        <p>For any suggestions email me at my address baliyansiddhant13@gmail.com</p>
-        <p>&copy; 2025 Movie and TV Show Watchlist</p>
+        <p>Have suggestions? Email me at <a href="mailto:sidaxe43@gmail.com">sidaxe43@gmail.com</a></p>
+        <p style="margin-top: 1rem; opacity: 0.7;">&copy; 2025 Siddhant's Watchlist Hub</p>
     </footer>
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle("dark-mode");
-        }
-    </script>
+
+   
 </body>
 </html>
