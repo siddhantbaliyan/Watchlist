@@ -63,7 +63,7 @@ const movies = [  { title: "John Wick: Chapter 1", year: 2014, genre: "Action, T
         { title: "American Pie Presents: Girls Rules", year: 2020, genre: "Comedy", watched: false },
         { title: "Now You See Me 1", year: 2013, genre: "Thriller, Mystery", watched:true },
         { title: "Now You See Me 2", year: 2016, genre: "Thriller, Mystery", watched:true },
-        { title: "Now You See Me 3", year: 2025, genre: "Thriller, Mystery", watched:false },
+        { title: "Now You See Me 3", year: 2025, genre: "Thriller, Mystery", watched:true },
         { title: "Star Wars Chapter IV: A New Hope", year: 1977, genre: "Sci-Fi, Adventure", watched: false },
         { title: "Star Wars Chapter V: The Empire Strikes Back", year: 1980, genre: "Sci-Fi, Adventure", watched: false },
         { title: "Star Wars Chapter VI: Return of the Jedi", year: 1983, genre: "Sci-Fi, Adventure", watched: false },
@@ -105,7 +105,8 @@ const movies = [  { title: "John Wick: Chapter 1", year: 2014, genre: "Action, T
         { title: "Jack reacher", year: 2012, genre: "Action , crime , thriller", watched: true },
         { title: "Jack reacher never go back", year: 2016, genre: "Action , crime , thriller", watched: true },
         { title: "My Fault", year: 2023, genre: "Drama, Romance", watched:true  },
-        { title: "Your Fault", year: 2024, genre: "Drama, Romance", watched:true  },
+        { title: "Your Fault", year: 2024, genre: "Drama, Romance", watched:false  },
+        { title: "our Fault", year: 2025, genre: "Drama, Romance", watched:false  },
         { title: "The Karate Kid", year: 1984, genre: "Drama, Family", watched:true  },
         { title: "The Karate Kid II", year: 1986, genre: "Drama, Family", watched:false  },
         { title: "The Karate Kid III", year: 1989, genre: "Drama, Family", watched:false },
@@ -279,6 +280,7 @@ const movies = [  { title: "John Wick: Chapter 1", year: 2014, genre: "Action, T
         { title: "Love and other Drugs", year: 2010, genre: "Comedy , Romance", watched: false },
         { title: "The Blind Side", year: 2009, genre: "Sport , Drama", watched: false  },
         { title: "Rush", year:2013, genre: " Sport , Action  ",  watched: false   },
+        { title: "Kiss Kiss Bang Bang", year: 2006 , genre: " thriller , drama  ",  watched: false },
         { title: "A house of dynamite", year: 2025 , genre: " thriller , drama  ",  watched: false }
 
       //  { title: "Empty  ", year:2000 , genre: " Gamma , delta   ",  watched: true }
