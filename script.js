@@ -284,7 +284,6 @@ const movies = [{ title: "John Wick: Chapter 1", year: 2014, genre: "Action, Thr
 { title: "queen of chess* ", year:2026 , genre: " N/A   ",  watched: false },
 { title: "War Machine*  ", year:2026 , genre: " Action , Sci-fi   ",  watched: false },
 { title: "A house of Dynamite  ", year:2025 , genre: " Thriller , Drama  ",  watched: false}
-//{ title: "Empty  ", year:2000 , genre: " Gamma , delta   ",  watched: true }
 ];
 
 
