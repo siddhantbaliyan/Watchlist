@@ -278,9 +278,15 @@ const movies = [{ title: "John Wick: Chapter 1", year: 2014, genre: "Action, Thr
 { title: "Love and other Drugs", year: 2010, genre: "Comedy , Romance", watched: false },
 { title: "The Blind Side", year: 2009, genre: "Sport , Drama", watched: false },
 { title: "Rush", year: 2013, genre: " Sport , Action  ", watched: false },
-{ title: "kiss kiss bang bang", year: 2005, genre: " Action , Comedy   ", watched: false }
-    //  { title: "Empty  ", year:2000 , genre: " Gamma , delta   ",  watched: true }
+{ title: "kiss kiss bang bang", year: 2005, genre: " Action , Comedy   ", watched: false },
+{ title: "blade runner 2049  ", year:2017 , genre: " sci-fi,Action   ",  watched: true },
+{ title: "tenet  ", year:2020 , genre: " Gamma , delta   ",  watched: false },
+{ title: "queen of chess* ", year:2026 , genre: " N/A   ",  watched: false },
+{ title: "War Machine*  ", year:2026 , genre: " Action , Sci-fi   ",  watched: false },
+{ title: "A house of Dynamite  ", year:2025 , genre: " Thriller , Drama  ",  watched: false}
+//{ title: "Empty  ", year:2000 , genre: " Gamma , delta   ",  watched: true }
 ];
+
 
 
 const movieTableBody = document.getElementById('movieTableBody');
