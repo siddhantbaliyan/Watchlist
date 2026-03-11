@@ -87,3 +87,8 @@ function createMovieRow(movie) {
 movies.forEach(movie => {
     movieTableBody.appendChild(createMovieRow(movie));
 });
+
+// dark‑mode toggle moved here so HTML doesn't need its own script
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+}
