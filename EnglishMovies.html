@@ -6,21 +6,39 @@
     <title>English Movies Watchlist</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        :root {
+            /* limit layout width and allow breathing room on large screens */
+            --content-width: 90%;
+            --max-width: 900px;
+        }
         body {
             background-color: #f5f5f5;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
+        /* constrain header/table width and center on wide screens */
+        header, table {
+            max-width: var(--max-width);
+            width: var(--content-width);
+            margin-left: auto;
+            margin-right: auto;
+        }
         header {
             background-color: #4CAF50;
             color: white;
-            text-align: center;
+            /* make header width match table and center it */
+            width: var(--content-width);
+            margin: 2rem auto 0;
             padding: 1rem;
+            border-radius: 8px;
+            box-sizing: border-box;
+            /* align heading text with table columns */
+            text-align: left;
         }
         table {
-            width: 90%;
-            margin: 2rem auto;
+            width: var(--content-width);
+            margin: 1rem auto 2rem;
             border-collapse: collapse;
             background: #fff;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -73,11 +91,38 @@
         .dark-mode th {
             background-color: #444;
         }
+        /* alternating rows in dark mode should also blend nicely */
+        .dark-mode tr:nth-child(even) {
+            background-color: #333;
+        }
+
+        /* remove default heading margin so alignment stays consistent */
+        header h1 {
+            margin: 0;
+        }
+
+        /* responsive tweaks for smaller screens */
+        @media (max-width: 600px) {
+            header, table {
+                width: 100%;
+                margin: 0.5rem auto;
+            }
+            th, td {
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+            button {
+                top: 5px;
+                right: 5px;
+                padding: 6px 10px;
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1> English Movies Watchlist Of Siddhant</h1>
+        <h1>English Movies Watchlist Of Siddhant</h1>
         <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
     </header>
 
@@ -105,3 +150,7 @@
     </script>
 </body>
 </html>
+
+
+
+

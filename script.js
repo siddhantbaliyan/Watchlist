@@ -279,10 +279,10 @@ const movies = [  { title: "John Wick: Chapter 1", year: 2014, genre: "Action, T
         { title: "The Blind Side", year: 2009, genre: "Sport , Drama", watched: false  },
         { title: "Rush", year:2013, genre: " Sport , Action  ",  watched: false   },
         { title: "kiss kiss bang bang", year: 2005, genre: " Action , Comedy   ", watched: false },
-        { title: "blade runner 2049  ", year:2017 , genre: " sci-fi,Action   ",  watched: true },
+        { title: "blade runner 2049  ", year:2017 , genre: " sci-fi,Action   ",  watched: false },
         { title: "tenet  ", year:2020 , genre: " Gamma , delta   ",  watched: false },
-        { title: "queen of chess* ", year:2026 , genre: " N/A   ",  watched: false },
-        { title: "War Machine*  ", year:2026 , genre: " Action , Sci-fi   ",  watched: false },
+        { title: "queen of chess ", year:2026 , genre: " Biography , sports   ",  watched: false },
+        { title: "War Machine  ", year:2026 , genre: " Action , Sci-fi   ",  watched: false },
         { title: "A house of Dynamite  ", year:2025 , genre: " Thriller , Drama  ",  watched: false}
         
       //  { title: "Empty  ", year:2000 , genre: " Gamma , delta   ",  watched: true }
