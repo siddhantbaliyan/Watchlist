@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         :root {
-            --content-width: 100%;
+            /* limit layout width and allow breathing room on large screens */
+            --content-width: 90%;
+            --max-width: 900px;
         }
         body {
             background-color: #f5f5f5;
@@ -14,10 +16,18 @@
             margin: 0;
             padding: 0;
         }
+        /* constrain header/table width and center on wide screens */
+        header, table {
+            max-width: var(--max-width);
+            width: var(--content-width);
+            margin-left: auto;
+            margin-right: auto;
+        }
         header {
             background-color: #4CAF50;
             color: white;
-            text-align: center;
+            /* align heading text with table columns */
+            text-align: left;
             width: var(--content-width);
             margin: 2rem auto 0;
             padding: 1rem;
@@ -78,6 +88,30 @@
         }
         .dark-mode th {
             background-color: #444;
+        }
+        .dark-mode tr:nth-child(even) {
+            background-color: #333;
+        }
+        /* remove default heading margin so alignment stays consistent */
+        header h1 {
+            margin: 0;
+        }
+        /* responsive tweaks for smaller screens */
+        @media (max-width: 600px) {
+            header, table {
+                width: 100%;
+                margin: 0.5rem auto;
+            }
+            th, td {
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+            button {
+                top: 5px;
+                right: 5px;
+                padding: 6px 10px;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
