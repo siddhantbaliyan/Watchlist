@@ -87,7 +87,8 @@ header {
 .dark-mode th {
     background-color: #444;
 }
-.dark-mode tr:nth-child(even) {
+/* alternate only data rows, not the header */
+.dark-mode tbody tr:nth-child(even) {
     background-color: #252525;
 }
 
