@@ -4,116 +4,8 @@
     <title>Marvel TV Shows Watchlist</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        :root {
-            /* limit layout width and allow breathing room on large screens */
-            --content-width: 90%;
-            --max-width: 900px;
-        }
-        body {
-            background-color: #f5f5f5;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        /* constrain header/table width and center on wide screens */
-        header, table {
-            max-width: var(--max-width);
-            width: var(--content-width);
-            margin-left: auto;
-            margin-right: auto;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            /* align heading text with table columns */
-            text-align: left;
-            width: var(--content-width);
-            margin: 2rem auto 0;
-            padding: 1rem;
-            border-radius: 8px;
-            box-sizing: border-box;
-        }
-        table {
-            width: var(--content-width);
-            margin: 1rem auto 2rem;
-            border-collapse: collapse;
-            background: #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-        .watched {
-            color: green;
-            text-align: center;
-        }
-        .unwatched {
-            color: red;
-            text-align: center;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            margin-top: 3rem;
-        }
-        button {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            padding: 8px 12px;
-            background-color: #444;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .dark-mode {
-            background-color: #1e1e1e;
-            color: #f5f5f5;
-        }
-        .dark-mode table {
-            background-color: #2c2c2c;
-            color: #eee;
-        }
-        .dark-mode th {
-            background-color: #444;
-        }
-        .dark-mode tr:nth-child(even) {
-            background-color: #333;
-        }
-        /* remove default heading margin so alignment stays consistent */
-        header h1 {
-            margin: 0;
-        }
-        /* responsive tweaks for smaller screens */
-        @media (max-width: 600px) {
-            header, table {
-                width: 100%;
-                margin: 0.5rem auto;
-            }
-            th, td {
-                padding: 8px;
-                font-size: 0.9rem;
-            }
-            button {
-                top: 5px;
-                right: 5px;
-                padding: 6px 10px;
-                font-size: 0.9rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header>
@@ -286,11 +178,7 @@
         <p>Suggestions? Email: baliyansiddhant13@gmail.com</p>
     </footer>
 
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle("dark-mode");
-        }
-    </script>
+    <script src="common.js"></script>
 </body>
 </html>
 
