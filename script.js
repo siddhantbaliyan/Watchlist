@@ -80,7 +80,7 @@ const movies = [  { title: "John Wick: Chapter 1", year: 2014, genre: "Action, T
         { title: "Mission Impossible V: Rogue Nation", year: 2015, genre: "Action, Adventure", watched: true },
         { title: "Mission Impossible VI: Fallout", year: 2018, genre: "Action, Adventure", watched: true },
         { title: "Mission Impossible VII: Dead Reckoning Part 1", year: 2023, genre: "Action, Adventure", watched: true },
-        { title: "Mission Impossible VIII: The Final Reckoning", year: 2024, genre: "Action, Adventure", watched: false },
+        { title: "Mission Impossible VIII: The Final Reckoning", year: 2024, genre: "Action, Adventure", watched: true },
         { title: "Enola Holmes 1", year: 2020, genre: "Mystery, Adventure", watched: false },
         { title: "Enola Holmes 2", year: 2022, genre: "Mystery, Adventure", watched: false },
         { title: "Bad Boys I", year: 1995, genre: "Action, Comedy", watched: false },
