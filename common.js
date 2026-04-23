@@ -1,10 +1,38 @@
 /* common.js — shared behaviours for all pages */
 
 // ── Dark / Light toggle ──────────────────────────────────────────
-// Default is dark; toggle switches to light-mode class
+// Respects browser/OS theme by default; toggle manually overrides it.
+
 function toggleDarkMode() {
-  document.body.classList.toggle('light-mode');
+  const body = document.body;
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  // Determine current effective state
+  const isDark = body.classList.contains('force-dark') ||
+    (!body.classList.contains('force-light') && prefersDark);
+
+  // Flip
+  body.classList.remove('force-dark', 'force-light');
+  if (isDark) {
+    body.classList.add('force-light');
+  } else {
+    body.classList.add('force-dark');
+  }
+  updateToggleLabel();
 }
+
+function updateToggleLabel() {
+  const btn = document.querySelector('button[onclick="toggleDarkMode()"], button[data-toggle]');
+  if (!btn) return;
+  const body = document.body;
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const isDark = body.classList.contains('force-dark') ||
+    (!body.classList.contains('force-light') && prefersDark);
+  btn.textContent = isDark ? '☀ Light Mode' : '🌙 Dark Mode';
+}
+
+// Set label on load without forcing any class
+document.addEventListener('DOMContentLoaded', updateToggleLabel);
 
 // ── Inject search bar above any table ────────────────────────────
 function injectSearch() {
@@ -70,6 +98,7 @@ function injectStats() {
 
 // ── Boot ─────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
+  updateToggleLabel();
   injectStats();
   injectSearch();
 });

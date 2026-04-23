@@ -5,26 +5,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-  /* palette */
-  --bg:          #0a0a0f;
-  --surface:     #111118;
-  --surface2:    #18181f;
-  --surface3:    #1e1e28;
-  --border:      rgba(255,255,255,0.07);
-  --border-glow: rgba(255,200,60,0.25);
-  --accent:      #f5c842;
-  --accent2:     #ff6b35;
-  --watched-clr: #22c55e;
+  /* accent & sizing — always the same */
+  --accent:        #f5c842;
+  --accent2:       #ff6b35;
+  --border-glow:   rgba(255,200,60,0.25);
+  --watched-clr:   #22c55e;
   --unwatched-clr: #ef4444;
-  --text:        #e8e8f0;
-  --text-dim:    #7a7a90;
-  --text-dimmer: #44445a;
-
-  /* sizing */
   --content-width: 92%;
-  --max-width: 1100px;
-  --radius: 12px;
-  --radius-sm: 6px;
+  --max-width:     1100px;
+  --radius:        12px;
+  --radius-sm:     6px;
+
+  /* light palette (browser default when user prefers light) */
+  --bg:        #f0f0f5;
+  --surface:   #ffffff;
+  --surface2:  #f5f5fa;
+  --surface3:  #eaeaf0;
+  --border:    rgba(0,0,0,0.08);
+  --text:      #111118;
+  --text-dim:  #55556a;
+  --text-dimmer: #9999aa;
+}
+
+/* dark palette — activated when OS/browser is in dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:        #0a0a0f;
+    --surface:   #111118;
+    --surface2:  #18181f;
+    --surface3:  #1e1e28;
+    --border:    rgba(255,255,255,0.07);
+    --text:      #e8e8f0;
+    --text-dim:  #7a7a90;
+    --text-dimmer: #44445a;
+  }
 }
 
 /* ── Reset & Base ── */
@@ -436,20 +450,35 @@ footer p { margin: 0; }
   font-size: 1rem;
 }
 
-/* ── Light mode (toggled) ── */
-body.light-mode {
-  --bg:       #f0f0f5;
-  --surface:  #ffffff;
-  --surface2: #f5f5fa;
-  --surface3: #eaeaf0;
-  --border:   rgba(0,0,0,0.08);
-  --text:     #111118;
-  --text-dim: #55556a;
+/* ── Manual toggle overrides browser default ── */
+
+/* Force dark regardless of OS setting */
+body.force-dark {
+  --bg:        #0a0a0f;
+  --surface:   #111118;
+  --surface2:  #18181f;
+  --surface3:  #1e1e28;
+  --border:    rgba(255,255,255,0.07);
+  --text:      #e8e8f0;
+  --text-dim:  #7a7a90;
+  --text-dimmer: #44445a;
+}
+
+/* Force light regardless of OS setting */
+body.force-light {
+  --bg:        #f0f0f5;
+  --surface:   #ffffff;
+  --surface2:  #f5f5fa;
+  --surface3:  #eaeaf0;
+  --border:    rgba(0,0,0,0.08);
+  --text:      #111118;
+  --text-dim:  #55556a;
   --text-dimmer: #9999aa;
 }
 
-/* kept for backward compat */
-.dark-mode { /* no-op, dark is default */ }
+/* backward compat stubs */
+.dark-mode  { }
+.light-mode { }
 
 /* ── Progress bar inside tables ── */
 .progress-wrap {
