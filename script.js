@@ -41,9 +41,9 @@ const movies = [  { title: "John Wick: Chapter 1", year: 2014, genre: "Action, T
         { title: "Avatar 5", year: 2031, genre: "Action, Fantasy", watched: false },
         { title: "Extraction 1", year: 2020, genre: "Action, Thriller", watched:  true},
         { title: "Extraction 2", year: 2023, genre: "Action, Thriller", watched:true },
-        { title: "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe ", year:2005 , genre: " Fantasy , adventure ",  watched: true},
-        { title: "The Chronicles of Narnia: Prince Caspian ", year:2008 , genre: " Family , Adventure  ",  watched: true  },
-        { title: "The Chronicles of Narnia: The Voyage of the Dawn Treader  ", year:2010 , genre: " Family , Adventure ",  watched: true  },
+        { title: "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe", year:2005, genre: "Fantasy, Adventure", watched: true},
+        { title: "The Chronicles of Narnia: Prince Caspian", year:2008, genre: "Family, Adventure", watched: true  },
+        { title: "The Chronicles of Narnia: The Voyage of the Dawn Treader", year:2010, genre: "Family, Adventure", watched: true  },
         { title: "Harry Potter 1: And the Sorcerer's Stone", year: 2001, genre: "Fantasy, Adventure", watched: true},
         { title: "Harry Potter 2: And the Chamber of Secrets", year: 2002, genre: "Fantasy, Adventure", watched: true },
         { title: "Harry Potter 3: And the Prisoner of Azkaban", year: 2004, genre: "Fantasy, Adventure", watched: true },
@@ -80,39 +80,25 @@ const movies = [  { title: "John Wick: Chapter 1", year: 2014, genre: "Action, T
         { title: "Mission Impossible V: Rogue Nation", year: 2015, genre: "Action, Adventure", watched: true },
         { title: "Mission Impossible VI: Fallout", year: 2018, genre: "Action, Adventure", watched: true },
         { title: "Mission Impossible VII: Dead Reckoning Part 1", year: 2023, genre: "Action, Adventure", watched: true },
-        { title: "Mission Impossible VIII: The Final Reckoning ", year: 2024, genre: "Action, Adventure", watched: false },
+        { title: "Mission Impossible VIII: The Final Reckoning", year: 2024, genre: "Action, Adventure", watched: false },
         { title: "Enola Holmes 1", year: 2020, genre: "Mystery, Adventure", watched: false },
         { title: "Enola Holmes 2", year: 2022, genre: "Mystery, Adventure", watched: false },
         { title: "Bad Boys I", year: 1995, genre: "Action, Comedy", watched: false },
         { title: "Bad Boys II", year: 2003, genre: "Action, Comedy", watched: false },
-        { title: "Bad Boys III", year: 2020, genre: "Action, Comedy", watched: false },
-        { title: "Bad Boys IV: Ride or Die", year: 2024, genre: "Action, Comedy", watched: false },
-        { title: "The Godfather 1", year: 1972, genre: "Crime, Drama", watched: false },
-        { title: "The Godfather 2", year: 1974, genre: "Crime, Drama", watched: false },
-        { title: "The Godfather 3", year: 1990, genre: "Crime, Drama", watched: false },
-        { title: "The Fast and the Furious 1", year: 2001, genre: "Action, Thriller", watched: false },
-        { title: "Fast 2 Furious", year: 2003, genre: "Action, Thriller", watched: false },
-        { title: "The Fast and the Furious: Tokyo Drift", year: 2006, genre: "Action, Thriller", watched: false },
-        { title: "Fast and Furious 4", year: 2009, genre: "Action, Thriller", watched: false },
-        { title: "Fast Five", year: 2011, genre: "Action, Thriller", watched: false },
-        { title: "Furious Six", year: 2013, genre: "Action, Thriller", watched: false },
-        { title: "Furious 7", year: 2015, genre: "Action, Thriller", watched: false },
-        { title: "The Fate of the Furious 8", year: 2017, genre: "Action, Thriller", watched: false },
-        { title: "F9: The Fast Saga", year: 2021, genre: "Action, Thriller", watched: false },
-        { title: "Fast X", year: 2023, genre: "Action, Thriller", watched: false },
-        { title: "Top Gun", year: 1986, genre: "Action, Drama", watched: true },
-        { title: "Top Gun 2: Maverick", year: 2022, genre: "Action, Drama", watched:true  },
-        { title: "Jack reacher", year: 2012, genre: "Action , crime , thriller", watched: true },
-        { title: "Jack reacher never go back", year: 2016, genre: "Action , crime , thriller", watched: true },
-        { title: "My Fault", year: 2023, genre: "Drama, Romance", watched:true  },
-        { title: "Your Fault", year: 2024, genre: "Drama, Romance", watched:true  },
-        { title: "The Karate Kid", year: 1984, genre: "Drama, Family", watched:true  },
-        { title: "The Karate Kid II", year: 1986, genre: "Drama, Family", watched:false  },
-        { title: "The Karate Kid III", year: 1989, genre: "Drama, Family", watched:false },
-        { title: "The Karate Kid (2010)", year: 2010, genre: "Action, Drama", watched: true},
-        { title: "Karate Kid Legends", year:2025, genre: " Action , Drama  ",  watched: true   },
-        { title: "Ted 1", year: 2012, genre: "Comedy, Fantasy", watched: true },
-        { title: "Ted 2", year: 2015, genre: "Comedy, Fantasy", watched: true },
+        { title: "Bad Boys for Life (3)", year: 2020, genre: "Action, Comedy", watched: false },
+        { title: "Bad Boys: Ride or Die (4)", year: 2024, genre: "Action, Comedy", watched: false },
+        { title: "Fast and Furious 1", year: 2001, genre: "Action, Crime", watched: true },
+        { title: "Fast and Furious 2: 2 Fast 2 Furious", year: 2003, genre: "Action, Crime", watched: true },
+        { title: "Fast and Furious 3: Tokyo Drift", year: 2006, genre: "Action, Crime", watched: true },
+        { title: "Fast and Furious 4", year: 2009, genre: "Action, Crime", watched: true },
+        { title: "Fast and Furious 5: Fast Five", year: 2011, genre: "Action, Crime", watched: true },
+        { title: "Fast and Furious 6", year: 2013, genre: "Action, Crime", watched: true },
+        { title: "Fast and Furious 7", year: 2015, genre: "Action, Crime", watched: true },
+        { title: "Fast and Furious 8: The Fate of the Furious", year: 2017, genre: "Action, Crime", watched: true },
+        { title: "Fast and Furious: Hobbs & Shaw", year: 2019, genre: "Action, Crime", watched: true },
+        { title: "Fast and Furious 9: F9", year: 2021, genre: "Action, Crime", watched: true },
+        { title: "Fast and Furious 10: Fast X", year: 2023, genre: "Action, Crime", watched: true },
+        { title: "Fast and Furious 11", year: 2025, genre: "Action, Crime", watched: false },
         { title: "Dr. No (007)", year: 1962, genre: "Action, Adventure", watched: false },
         { title: "From Russia with Love (007)", year: 1963, genre: "Action, Adventure", watched: false },
         { title: "Goldfinger (007)", year: 1964, genre: "Action, Adventure", watched: false },
@@ -175,30 +161,29 @@ const movies = [  { title: "John Wick: Chapter 1", year: 2014, genre: "Action, T
         { title: "Grown ups 2", year: 2013, genre: "Comedy", watched: false },
         { title: "The Family Plan", year: 2023, genre: "Action, Comedy", watched: true },
         { title: "The Family Plan 2", year: 2025, genre: "Action, Comedy", watched: true },
-        { title: "maleficent", year: 2014, genre: "Family, Drama ", watched: true },
-        { title: "maleficent mistress of evil", year: 2019, genre: "Family , Adventure", watched: true },
-        { title: "Kingsmen: the secret service", year: 2014, genre: "Action , comedy", watched: false },
-        { title: "Kingsmen: the Golden Circle", year: 2017, genre: "Action , war", watched: false },
-        { title: "The Kings men", year: 2021, genre: "Action , war", watched: false },
-        { title: "The Accountant", year: 2016, genre: "Action , thriller", watched: false  },
-        { title: "The Accountant 2", year: 2025, genre: "Action , thriller", watched:false  }
-      //  { title: "Empty  ", year:2000 , genre: " Gamma , delta   ",  watched: true }
+        { title: "Maleficent", year: 2014, genre: "Family, Drama", watched: true },
+        { title: "Maleficent: Mistress of Evil", year: 2019, genre: "Family, Adventure", watched: true },
+        { title: "Kingsmen: The Secret Service", year: 2014, genre: "Action, Comedy", watched: false },
+        { title: "Kingsmen: The Golden Circle", year: 2017, genre: "Action, War", watched: false },
+        { title: "The King's Man", year: 2021, genre: "Action, War", watched: false },
+        { title: "The Accountant", year: 2016, genre: "Action, Thriller", watched: false  },
+        { title: "The Accountant 2", year: 2025, genre: "Action, Thriller", watched:false  }
 ];
-
 
 const movieTableBody = document.getElementById('movieTableBody');
 
-function createMovieRow(movie) {
+function createMovieRow(movie, index) {
     const row = document.createElement('tr');
     row.innerHTML = `
+        <td>${index + 1}</td>
         <td>${movie.title}</td>
         <td>${movie.year}</td>
         <td>${movie.genre}</td>
-        <td class="${movie.watched ? 'watched' : 'unwatched'}">${movie.watched ? 'Watched' : 'Unwatched'}</td>
+        <td><span class="${movie.watched ? 'watched' : 'unwatched'}">${movie.watched ? '✓ Watched' : '✗ Unwatched'}</span></td>
     `;
     return row;
 }
 
-movies.forEach(movie => {
-    movieTableBody.appendChild(createMovieRow(movie));
+movies.forEach((movie, i) => {
+    movieTableBody.appendChild(createMovieRow(movie, i));
 });
