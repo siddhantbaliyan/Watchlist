@@ -17,6 +17,7 @@ const movies = [
     { title: "Blended", year: 2014, genre: "Romantic, Comedy", watched: true },
     { title: "Bridge to Terabithia", year: 2007, genre: "Adventure, Drama", watched: false },
     { title: "Coda", year: 2021, genre: "Musical, Comedy", watched: false },
+    { title: "Crime 101", year: 2026, genre: "Crime , Thriller", watched: false },
     { title: "Demolition", year: 2015, genre: "Drama", watched: false },
     { title: "Dumb and Dumber", year: 1994, genre: "Comedy", watched: false },
     { title: "Dunkirk", year: 2017, genre: "Action, Drama", watched: true },
