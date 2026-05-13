@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TV Shows — Watchlist</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    header::before { background: linear-gradient(90deg, #38bdf8, #818cf8, #38bdf8); background-size:200%; animation: shimmer 3s linear infinite; }
-    header h1 span { color: #38bdf8; }
+    header::before {
+      background: linear-gradient(90deg, #38bdf8, #818cf8, #38bdf8);
+      background-size: 200%;
+      animation: shimmer 3s linear infinite;
+    }
+
+    header h1 span {
+      color: #38bdf8;
+    }
   </style>
 </head>
+
 <body>
   <header>
     <h1>📺 <span>TV Shows</span></h1>
@@ -30,52 +39,367 @@
       </tr>
     </thead>
     <tbody>
-      <tr><td>1</td><td>Friends</td><td>10</td><td>236</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>2</td><td>The Office</td><td>8</td><td>201</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>3</td><td>The Big Bang Theory</td><td>12</td><td>279</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>4</td><td>The Long Road Home</td><td>1</td><td>8</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>5</td><td>Game of Thrones</td><td>8</td><td>73</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>6</td><td>Breaking Bad</td><td>5</td><td>62</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>7</td><td>Money Heist</td><td>5</td><td>48</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>8</td><td>Dark</td><td>3</td><td>26</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>9</td><td>Sherlock</td><td>4</td><td>13</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>10</td><td>Suits</td><td>9</td><td>134</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>11</td><td>I am Groot</td><td>2</td><td>10</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>12</td><td>The Punisher</td><td>2</td><td>26</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>13</td><td>Moon Knight</td><td>1</td><td>6</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>14</td><td>Wednesday</td><td>1</td><td>8</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>15</td><td>Jack Ryan</td><td>4</td><td>30</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>16</td><td>Cobra Kai</td><td>6</td><td>65</td><td></td><td class="unwatched">✗</td><td>S5E7</td></tr>
-      <tr><td>17</td><td>IT Crowd</td><td>4</td><td>24</td><td></td><td class="unwatched">✗</td><td>S1E4</td></tr>
-      <tr><td>18</td><td>Brooklyn Nine-Nine</td><td>8</td><td>153</td><td></td><td class="unwatched">✗</td><td>S2E15</td></tr>
-      <tr><td>19</td><td>Modern Family</td><td>11</td><td>250</td><td></td><td class="unwatched">✗</td><td>S2E5</td></tr>
-      <tr><td>20</td><td>Young Sheldon</td><td>7</td><td>141</td><td></td><td class="unwatched">✗</td><td>S2E1</td></tr>
-      <tr><td>21</td><td>Mom</td><td>8</td><td>170</td><td></td><td class="unwatched">✗</td><td>S3E21</td></tr>
-      <tr><td>22</td><td>The Queen's Gambit</td><td>1</td><td>7</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>23</td><td>Daredevil</td><td>3</td><td>39</td><td></td><td class="unwatched">✗</td><td>—</td></tr>
-      <tr><td>24</td><td>Band of Brothers</td><td>1</td><td>10</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>25</td><td>Loki</td><td>2</td><td>12</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>26</td><td>That 90's Show</td><td>3</td><td>26</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>27</td><td>That 70's Show</td><td>3</td><td>26</td><td class="watched">✓</td><td></td><td>—</td></tr>
-      <tr><td>28</td><td>Chernobyl</td><td>1</td><td>5</td><td></td><td class="unwatched">✗</td><td>—</td></tr>
-      <tr><td>29</td><td>How I Met Your Mother</td><td>9</td><td>208</td><td></td><td class="unwatched">✗</td><td>—</td></tr>
-      <tr><td>30</td><td>House of the Dragon</td><td>2</td><td>20</td><td></td><td class="unwatched">✗</td><td>—</td></tr>
-      <tr><td>31</td><td>Better Call Saul</td><td>6</td><td>63</td><td></td><td class="unwatched">✗</td><td>—</td></tr>
-      <tr><td>32</td><td>Mindhunters</td><td>2</td><td>19</td><td></td><td class="unwatched">✗</td><td>—</td></tr>
-      <tr><td>33</td><td>True Detective</td><td>4</td><td>24</td><td></td><td class="unwatched">✗</td><td>—</td></tr>
-      <tr><td>34</td><td>Genius (Season 1)</td><td>1</td><td>10</td><td></td><td class="unwatched">✗</td><td>—</td></tr>
-      <tr><td>35</td><td>Two and a Half Men</td><td>12</td><td>262</td><td></td><td class="unwatched">✗</td><td>—</td></tr>
-      <tr><td>36</td><td>You</td><td>4</td><td>40</td><td></td><td class="unwatched">✗</td><td>—</td></tr>
-      <tr><td>37</td><td>Emily in Paris</td><td>4</td><td>40</td><td></td><td class="unwatched">✗</td><td>S2E1</td></tr>
-      <tr><td>38</td><td>The Sopranos</td><td>6</td><td>86</td><td></td><td class="unwatched">✗</td><td>—</td></tr>
-      <tr><td>39</td><td>The Wire</td><td>5</td><td>60</td><td></td><td class="unwatched">✗</td><td>—</td></tr>
+      <tr>
+        <td>1</td>
+        <td>Friends</td>
+        <td>10</td>
+        <td>236</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>The Office</td>
+        <td>8</td>
+        <td>201</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>The Big Bang Theory</td>
+        <td>12</td>
+        <td>279</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>The Long Road Home</td>
+        <td>1</td>
+        <td>8</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Game of Thrones</td>
+        <td>8</td>
+        <td>73</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Breaking Bad</td>
+        <td>5</td>
+        <td>62</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Money Heist</td>
+        <td>5</td>
+        <td>48</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Dark</td>
+        <td>3</td>
+        <td>26</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Sherlock</td>
+        <td>4</td>
+        <td>13</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Suits</td>
+        <td>9</td>
+        <td>134</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>I am Groot</td>
+        <td>2</td>
+        <td>10</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>The Punisher</td>
+        <td>2</td>
+        <td>26</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>Moon Knight</td>
+        <td>1</td>
+        <td>6</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>Wednesday</td>
+        <td>1</td>
+        <td>8</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>Jack Ryan</td>
+        <td>4</td>
+        <td>30</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>Cobra Kai</td>
+        <td>6</td>
+        <td>65</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>S5E7</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>IT Crowd</td>
+        <td>4</td>
+        <td>24</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>S1E4</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>Brooklyn Nine-Nine</td>
+        <td>8</td>
+        <td>153</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>S2E15</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>Modern Family</td>
+        <td>11</td>
+        <td>250</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>S2E5</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>Young Sheldon</td>
+        <td>7</td>
+        <td>141</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>S2E1</td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>Mom</td>
+        <td>8</td>
+        <td>170</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>S3E21</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>The Queen's Gambit</td>
+        <td>1</td>
+        <td>7</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>Daredevil</td>
+        <td>3</td>
+        <td>39</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>24</td>
+        <td>Band of Brothers</td>
+        <td>1</td>
+        <td>10</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>Loki</td>
+        <td>2</td>
+        <td>12</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>26</td>
+        <td>That 90's Show</td>
+        <td>3</td>
+        <td>26</td>
+        <td class="watched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>27</td>
+        <td>That 70's Show</td>
+        <td>3</td>
+        <td>26</td>
+        <td class="unwatched">✓</td>
+        <td></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>28</td>
+        <td>Chernobyl</td>
+        <td>1</td>
+        <td>5</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>29</td>
+        <td>How I Met Your Mother</td>
+        <td>9</td>
+        <td>208</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>30</td>
+        <td>House of the Dragon</td>
+        <td>2</td>
+        <td>20</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>31</td>
+        <td>Better Call Saul</td>
+        <td>6</td>
+        <td>63</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>32</td>
+        <td>Mindhunters</td>
+        <td>2</td>
+        <td>19</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>33</td>
+        <td>True Detective</td>
+        <td>4</td>
+        <td>24</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>34</td>
+        <td>Genius (Season 1)</td>
+        <td>1</td>
+        <td>10</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>35</td>
+        <td>Two and a Half Men</td>
+        <td>12</td>
+        <td>262</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>36</td>
+        <td>You</td>
+        <td>4</td>
+        <td>40</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>37</td>
+        <td>Emily in Paris</td>
+        <td>4</td>
+        <td>40</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>S2E1</td>
+      </tr>
+      <tr>
+        <td>38</td>
+        <td>The Sopranos</td>
+        <td>6</td>
+        <td>86</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>39</td>
+        <td>The Wire</td>
+        <td>5</td>
+        <td>60</td>
+        <td></td>
+        <td class="unwatched">✗</td>
+        <td>—</td>
+      </tr>
     </tbody>
   </table>
 
   <footer>
-    <p>← <a href="index.html" style="color:var(--accent);text-decoration:none;">Back to Home</a> &nbsp;·&nbsp; Suggestions: <a href="mailto:sidaxe43@gmail.com" style="color:var(--accent);text-decoration:none;">sidaxe43@gmail.com</a></p>
+    <p>← <a href="index.html" style="color:var(--accent);text-decoration:none;">Back to Home</a> &nbsp;·&nbsp;
+      Suggestions: <a href="mailto:sidaxe43@gmail.com"
+        style="color:var(--accent);text-decoration:none;">sidaxe43@gmail.com</a></p>
   </footer>
 
   <script src="common.js"></script>
 </body>
+
 </html>

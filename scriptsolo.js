@@ -1,5 +1,5 @@
 const movies = [
-    { title: "27 Dresses", year: 2008, genre: "Rom-Com, Drama", watched: false },
+    { title: "27 Dresses", year: 2008, genre: "Rom-Com, Drama", watched: true },
     { title: "50 First Dates", year: 2004, genre: "Romantic, Comedy", watched: true },
     { title: "(500) Days of Summer", year: 2009, genre: "Comedy, Romance", watched: true },
     { title: "1917", year: 2019, genre: "Drama, War", watched: false },
@@ -64,9 +64,11 @@ const movies = [
     { title: "New York, I Love You", year: 2008, genre: "Romance, Drama", watched: true },
     { title: "Oppenheimer", year: 2023, genre: "Biography, Drama", watched: true },
     { title: "Pawn Sacrifice", year: 2014, genre: "Biography, Drama", watched: true },
+    { title: "Project hail marry", year: 2026, genre: "Sci-Fi, Adventure", watched: false },
     { title: "Queen of Chess", year: 2026, genre: "Biography, Sports", watched: false },
     { title: "Red One", year: 2024, genre: "Action, Comedy", watched: false },
     { title: "Rush", year: 2013, genre: "Sport, Action", watched: false },
+    { title: "Saving private ryan", year: 1998, genre: "Action, War", watched: true },
     { title: "Scarface", year: 1983, genre: "Crime, Drama", watched: false },
     { title: "Serendipity", year: 2001, genre: "Romance, Comedy", watched: true },
     { title: "She's the Man", year: 2006, genre: "Comedy, Sport", watched: true },
