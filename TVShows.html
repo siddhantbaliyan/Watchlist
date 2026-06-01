@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Shows — Watchlist</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    header::before {
+      background: linear-gradient(90deg, #38bdf8, #818cf8, #38bdf8);
+      background-size: 200%;
+      animation: shimmer 3s linear infinite;
+    }
+    header h1 span {
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📺 <span>TV Shows</span></h1>
+    <button onclick="toggleDarkMode()">☀ Toggle Light</button>
+  </header>
+  <h4>* Season-wise details coming soon</h4>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Seasons</th>
+        <th>Episodes</th>
+        <th>Status</th>
+        <th>Continue From</th>
+      </tr>
+    </thead>
+    <tbody id="tvTableBody"></tbody>
+  </table>
+
+  <footer>
+    <p>← <a href="index.html" style="color:var(--accent);text-decoration:none;">Back to Home</a> &nbsp;·&nbsp;
+      Suggestions: <a href="mailto:sidaxe43@gmail.com" style="color:var(--accent);text-decoration:none;">sidaxe43@gmail.com</a></p>
+  </footer>
+
+  <script src="tvshows.js"></script>
+  <script src="common.js"></script>
+</body>
+</html>
