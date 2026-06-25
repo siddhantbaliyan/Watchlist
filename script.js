@@ -1,13 +1,4 @@
 const movies = [
-    { title: "American Pie 1", year: 1999, genre: "Comedy, Romance", watched: true },
-    { title: "American Pie 2", year: 2001, genre: "Comedy, Romance", watched: true },
-    { title: "American Wedding (3)", year: 2003, genre: "Comedy, Romance", watched: true },
-    { title: "American Pie: Reunion (4)", year: 2012, genre: "Comedy, Romance", watched: true },
-    { title: "American Pie Presents: Band Camp", year: 2005, genre: "Comedy", watched: false },
-    { title: "American Pie Presents: The Naked Mile", year: 2006, genre: "Comedy", watched: false },
-    { title: "American Pie Presents: Beta House", year: 2007, genre: "Comedy", watched: false },
-    { title: "American Pie Presents: The Book of Love", year: 2009, genre: "Comedy", watched: false },
-    { title: "American Pie Presents: Girls Rules", year: 2020, genre: "Comedy", watched: false },
     { title: "Avatar 1", year: 2009, genre: "Action, Fantasy", watched: true },
     { title: "Avatar 2: The Way of Water", year: 2022, genre: "Action, Fantasy", watched: true },
     { title: "Avatar 3: Fire and Ash", year: 2025, genre: "Action, Fantasy", watched: false },
@@ -190,7 +181,16 @@ const movies = [
     { title: "Transformers One (Animated Film)", year: 2024, genre: "Action, Sci-Fi", watched: false },
     { title: "XXX (2002)", year: 2002, genre: "Action, Thriller", watched: false },
     { title: "XXX 2: State of the Union", year: 2005, genre: "Action, Thriller", watched: false },
-    { title: "XXX: Return of Xander Cage", year: 2017, genre: "Action, Thriller", watched: true }
+    { title: "XXX: Return of Xander Cage", year: 2017, genre: "Action, Thriller", watched: true },
+    { title: "American Pie 1", year: 1999, genre: "Comedy, Romance", watched: true },
+    { title: "American Pie 2", year: 2001, genre: "Comedy, Romance", watched: true },
+    { title: "American Wedding (3)", year: 2003, genre: "Comedy, Romance", watched: true },
+    { title: "American Pie: Reunion (4)", year: 2012, genre: "Comedy, Romance", watched: true },
+    { title: "American Pie Presents: Band Camp", year: 2005, genre: "Comedy", watched: false },
+    { title: "American Pie Presents: The Naked Mile", year: 2006, genre: "Comedy", watched: false },
+    { title: "American Pie Presents: Beta House", year: 2007, genre: "Comedy", watched: false },
+    { title: "American Pie Presents: The Book of Love", year: 2009, genre: "Comedy", watched: false },
+    { title: "American Pie Presents: Girls Rules", year: 2020, genre: "Comedy", watched: false }
 ];
 
 const movieTableBody = document.getElementById('movieTableBody');
