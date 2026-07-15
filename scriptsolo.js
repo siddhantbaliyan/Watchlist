@@ -21,6 +21,7 @@ const movies = [
     { title: "Demolition", year: 2015, genre: "Drama", watched: false },
     { title: "Dumb and Dumber", year: 1994, genre: "Comedy", watched: false },
     { title: "Dunkirk", year: 2017, genre: "Action, Drama", watched: true },
+    { title: "Edge of tomorrow", year: 2014, genre: "Action , Sci-fi", watched: false },
     { title: "Enough", year: 2002, genre: "Thriller, Action", watched: false },
     { title: "Eternal Sunshine of the Spotless Mind", year: 2004, genre: "Drama, Romance", watched: false },
     { title: "Eternity", year: 2025, genre: "Romance , Comedy", watched: false },
