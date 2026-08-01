@@ -19,7 +19,6 @@ Watchlist/
 ├── scriptsolo.js            # Data + renderer for Solo Movies
 │
 ├── MarvelMovies.html        # Marvel Cinematic Universe — Movies
-├── MarvelTvShows.html       # Marvel Cinematic Universe — TV Shows
 ├── scriptmarvel.js          # Data + renderer for Marvel content
 │
 ├── tvshowsnames.html        # English TV Shows
@@ -44,7 +43,6 @@ Watchlist/
 | 📺 TV Shows | English TV series with progress tracking |
 | 🇮🇳 Hindi TV Shows | Hindi-language series |
 | 🎨 Animation Films | Animated / cartoon movies |
-| ⚡ Marvel TV Shows | MCU Disney+ and Netflix series |
 | ⚡ Anime | Anime series and films |
 
 ---
