@@ -36,6 +36,7 @@ const movies = [
     { title: "Friends with Benefits", year: 2011, genre: "Comedy, Romance", watched: true },
     { title: "Ghosted", year: 2023, genre: "Romance, Action", watched: true },
     { title: "Gifted", year: 2017, genre: "Drama", watched: false },
+    { title: "Gone girl", year: 2014, genre: "Thriller , Mystery", watched: false },
     { title: "Good Luck Chuck", year: 2007, genre: "Comedy, Romance", watched: true },
     { title: "Gran Turismo", year: 2023, genre: "Action, Drama", watched: true },
     { title: "Hachiko: A Dog's Tale", year: 2009, genre: "Drama, Family", watched: false },
@@ -114,6 +115,7 @@ const movies = [
     { title: "Wedding Daze", year: 2006, genre: "Comedy, Romance", watched: true },
     { title: "We Live in Time", year: 2024, genre: "Drama, Romance", watched: true },
     { title: "We're the Millers", year: 2013, genre: "Comedy, Crime", watched: true },
+    { title: "Whiplash", year: 2014, genre: "drama ", watched: false },
     { title: "Why Him?", year: 2016, genre: "Comedy, Romance", watched: true }
 ];
 
