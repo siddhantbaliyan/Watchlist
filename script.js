@@ -16,6 +16,7 @@ const movies = [
     { title: "Batman 3: The Dark Knight Rises", year: 2012, genre: "Action, Crime", watched: true },
     { title: "Enola Holmes 1", year: 2020, genre: "Mystery, Adventure", watched: false },
     { title: "Enola Holmes 2", year: 2022, genre: "Mystery, Adventure", watched: false },
+    { title: "Enola Holmes 3", year: 2022, genre: "Mystery, Adventure", watched: false },
     { title: "Extraction 1", year: 2020, genre: "Action, Thriller", watched: true },
     { title: "Extraction 2", year: 2023, genre: "Action, Thriller", watched: true },
     { title: "Fast and Furious 1", year: 2001, genre: "Action, Crime", watched: true },
