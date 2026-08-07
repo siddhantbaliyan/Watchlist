@@ -62,6 +62,7 @@ const movies = [
     { title: "Mr and Mrs Smith", year: 2005, genre: "Action, Comedy", watched: false },
     { title: "My oxford Year", year: 2025, genre: "Romance , Comedy", watched: false },
     { title: "Napoleon", year: 2023, genre: "Biography, Drama", watched: true },
+    { title: "Nver let me go", year: 2010, genre: "Sci-fi , Romance", watched: false},
     { title: "No Hard Feelings", year: 2023, genre: "Comedy, Drama", watched: true },
     { title: "No Strings Attached", year: 2011, genre: "Comedy, Romance", watched: true },
     { title: "Notting Hill", year: 1999, genre: "Romance , Comedy", watched: true },
