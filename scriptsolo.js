@@ -53,7 +53,7 @@ const movies = [
     { title: "Jobs", year: 2013, genre: "Biography, Drama", watched: true },
     { title: "Jumanji", year: 1995, genre: "Adventure, Family", watched: true },
     { title: "Just Go With It", year: 2011, genre: "Comedy, Romance", watched: false },
-    { title: "Just Like Heaven", year: 2005, genre: "Comedy, Romance", watched: false },
+    { title: "Just Like Heaven", year: 2005, genre: "Comedy, Romance", watched: true },
     { title: "Just Married", year: 2003, genre: "Comedy, Romance", watched: true },
     { title: "Kiss Kiss Bang Bang", year: 2005, genre: "Action, Comedy", watched: true },
     { title: "La La Land", year: 2016, genre: "Drama, Romance", watched: true },
