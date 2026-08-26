@@ -19,7 +19,7 @@ const tvShows = [
     { name: "The Punisher", seasons: 2, episodes: 26, watched: true, continueFrom: null },
     { name: "Moon Knight", seasons: 1, episodes: 6, watched: true, continueFrom: null },
     { name: "Loki", seasons: 2, episodes: 12, watched: true, continueFrom: null },
-    { name: "Wednesday", seasons: 2, episodes: 16, watched: false , continueFrom: S2E1 },
+    { name: "Wednesday", seasons: 2, episodes: 16, watched: false , continueFrom: "S2E1" },
     { name: "Cobra Kai", seasons: 6, episodes: 65, watched: false, continueFrom: "S5E7" },
     { name: "IT Crowd", seasons: 4, episodes: 24, watched: false, continueFrom: "S1E4" },
     { name: "Brooklyn Nine-Nine", seasons: 8, episodes: 153, watched: false, continueFrom: "S2E15" },
