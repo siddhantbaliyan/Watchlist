@@ -39,7 +39,7 @@ const tvShows = [
     { name: "Emily in Paris", seasons: 4, episodes: 40, watched: false, continueFrom: "S2E1" },
     { name: "The Sopranos", seasons: 6, episodes: 86, watched: false, continueFrom: null },
     { name: "dexter", seasons: 8, episodes: 96, watched: false, continueFrom: null },
-    { name: "The Mentalist", seasons: 7, episodes: 151, watched: false, continueFrom: null },
+    { name: "The Mentalist", seasons: 7, episodes: 151, watched: false, continueFrom: null }
    
 ];
 
