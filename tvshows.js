@@ -26,6 +26,7 @@ const tvShows = [
     { name: "Modern Family", seasons: 11, episodes: 250, watched: false, continueFrom: "S2E5" },
     { name: "Young Sheldon", seasons: 7, episodes: 141, watched: false, continueFrom: "S2E1" },
     { name: "Mom", seasons: 8, episodes: 170, watched: false, continueFrom: "S3E21" },
+    { name: "Emily in Paris", seasons: 4, episodes: 40, watched: false, continueFrom: "S2E1" },
     { name: "Daredevil", seasons: 3, episodes: 39, watched: false, continueFrom: null },
     { name: "Chernobyl", seasons: 1, episodes: 5, watched: false, continueFrom: null },
     { name: "How I Met Your Mother", seasons: 9, episodes: 208, watched: false, continueFrom: null },
@@ -37,10 +38,9 @@ const tvShows = [
     { name: "Genius (Season 1)", seasons: 1, episodes: 10, watched: false, continueFrom: null },
     { name: "Two and a Half Men", seasons: 12, episodes: 262, watched: false, continueFrom: null },
     { name: "You", seasons: 4, episodes: 40, watched: false, continueFrom: null },
-    { name: "Emily in Paris", seasons: 4, episodes: 40, watched: false, continueFrom: "S2E1" },
     { name: "The Sopranos", seasons: 6, episodes: 86, watched: false, continueFrom: null },
     { name: "dexter", seasons: 8, episodes: 96, watched: false, continueFrom: null },
-    { name: "The Mentalist", seasons: 7, episodes: 151, watched: false, continueFrom: null }
+    { name: "The Mentalist", seasons: 7, episodes: 151, watched: false, continueFrom: null },
    
 ];
 
