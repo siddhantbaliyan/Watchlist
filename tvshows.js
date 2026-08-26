@@ -30,7 +30,7 @@ const tvShows = [
     { name: "Daredevil", seasons: 3, episodes: 39, watched: false, continueFrom: null },
     { name: "Chernobyl", seasons: 1, episodes: 5, watched: false, continueFrom: null },
     { name: "How I Met Your Mother", seasons: 9, episodes: 208, watched: false, continueFrom: null },
-    { name: "House of the Dragon", seasons: 4*, episodes: 34*, watched: false, continueFrom: null },
+    { name: "House of the Dragon", seasons: 4, episodes: 34, watched: false, continueFrom: null },
     { name: "A Knight of the seven kingdoms", seasons: 1, episodes: 6, watched: false, continueFrom: null },
     { name: "Better Call Saul", seasons: 6, episodes: 63, watched: false, continueFrom: null },
     { name: "Mindhunters", seasons: 2, episodes: 19, watched: false, continueFrom: null },
