@@ -103,6 +103,7 @@ const movies = [
     { title: "The Gray Man", year: 2022, genre: "Action, Mystery, Thriller", watched: false },
     { title: "The Imitation Game", year: 2014, genre: "Biography, Drama", watched: true },
     { title: "The Intern", year: 2015, genre: "Comedy, Drama", watched: true },
+    { title: "The Lincoln Lawyer", year: 2011, genre: "Thriller , crime", watched: true },
     { title: "The Martian", year: 2015, genre: "Sci-Fi, Drama", watched: true },
     { title: "The Ministry of Ungentlemanly Warfare", year: 2024, genre: "Action, Comedy, War", watched: false },
     { title: "The Other Zoey", year: 2024, genre: "Romance, Comedy", watched: true },
