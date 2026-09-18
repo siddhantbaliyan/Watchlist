@@ -39,6 +39,7 @@ const movies = [
     { title: "Gifted", year: 2017, genre: "Drama", watched: false },
     { title: "Gone girl", year: 2014, genre: "Thriller , Mystery", watched: true },
     { title: "Good Luck Chuck", year: 2007, genre: "Comedy, Romance", watched: true },
+    { title: "Good Will Hunting", year: 1997, genre: "Drama, Romance", watched: false },
     { title: "Gran Turismo", year: 2023, genre: "Action, Drama", watched: true },
     { title: "Hachiko: A Dog's Tale", year: 2009, genre: "Drama, Family", watched: false },
     { title: "Hitman", year: 2023, genre: "Action, Thriller", watched: true },
